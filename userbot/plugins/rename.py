@@ -55,7 +55,6 @@ async def _(event):
         return
     thumb = None
     if os.path.exists(thumb_image_path):
-        thumb_image_path = os.path.join(Config.TMP_DOWNLOAD_DIRECTORY, "thumb_image.jpg")
         thumb = thumb_image_path
     catevent = await edit_or_reply(
         event,
@@ -124,7 +123,6 @@ async def _(event):
         return
     thumb = None
     if os.path.exists(thumb_image_path):
-        thumb_image_path = os.path.join(Config.TMP_DOWNLOAD_DIRECTORY, "thumb_image.jpg")
         thumb = thumb_image_path
     catevent = await edit_or_reply(
         event,
